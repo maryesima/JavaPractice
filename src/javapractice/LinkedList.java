@@ -14,7 +14,7 @@ class Node {
     Node(int d)  { data = d;  next = null; } 
 } 
 
-class LinkedList {
+class LinkedList<I extends Number> {
     Node head;
     
     public void push(int new_data) {
@@ -48,7 +48,7 @@ class LinkedList {
     }
     public static void main(String[] args) {
 
-        LinkedList testList = new LinkedList();
+        LinkedList<Number> testList = new LinkedList<Number>();
         testList.push(1);
         testList.push(2);
         testList.push(3);
